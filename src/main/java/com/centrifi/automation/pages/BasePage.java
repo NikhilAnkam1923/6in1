@@ -138,7 +138,7 @@ public abstract class BasePage {
         if(verifyConfirmationDialog()) {
             WebElement dialogDelete = driverUtil.getWebElement(CONFIRMATION_DIALOG_DELETE_BUTTON);
             if (dialogDelete == null)
-                throw new AutomationException("Unable to locate delete button on confirmation dialog popup!");
+                throw new AutomationException("Unable locate delete button on confirmation dialog popup!");
             dialogDelete.click();
         } else {
             throw new AutomationException("Unable to locate delete confirmation dialog popup!");
